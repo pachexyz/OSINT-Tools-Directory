@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Tools Directory | fud0dev</title>
-    <meta name="description" content="Directorio centralizado de herramientas OSINT automatizado con IA.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>OSINT Tools Directory</title>
+    <meta name="description" content="Directorio corporativo y centralizado de herramientas OSINT automatizado con IA.">
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">_OSINT_DIR ></div>
-        <p>Directorio de herramientas de inteligencia y seguridad actualizado automáticamente.</p>
+        <div class="logo">OSINT Tools Directory</div>
+        <p class="subtitle">Directorio de herramientas de inteligencia de fuentes abiertas, monitoreado y actualizado mediante procesamiento IA.</p>
     </header>
 
     <div class="controls">
-        <input type="text" id="searchBar" placeholder="Buscar herramientas por nombre, descripción o tags...">
+        <input type="text" id="searchBar" placeholder="Buscar herramientas por nombre, descripción o palabras clave...">
         <div class="filter-chips" id="categoryFilters">
-            <span class="chip active" data-category="all">Todos</span>
+            <span class="chip active" data-category="all">Todas</span>
             <!-- Se llenará dinámicamente -->
         </div>
     </div>
 
     <section class="featured-section" id="featuredSection" style="display: none;">
-        <h2 class="section-title">✨ Últimas Novedades</h2>
+        <h2 class="section-title">Últimas Incorporaciones</h2>
         <div class="featured-grid" id="featuredGrid">
             <!-- Herramientas recientes aquí -->
         </div>
@@ -34,9 +36,12 @@
         <!-- Todas las herramientas aquí -->
     </main>
 
-    <footer style="text-align: center; padding: 4rem 2rem; color: var(--text-secondary); font-size: 0.9rem; border-top: 1px solid var(--border-color); margin-top: 4rem;">
-        <p>Proyecto mantenido por <a href="https://github.com/fud0dev" style="color: var(--accent-color);">fud0dev</a></p>
-        <p style="margin-top: 0.5rem;">Automatizado con Llama 3.3 via Groq</p>
+    <footer>
+        <div class="footer-content">
+            <p>Directorio mantenido por <strong>fud0dev</strong></p>
+            <p class="sub-footer">Plataforma impulsada por la comunidad y automatizada con Llama 3.</p>
+            <a href="https://github.com/fud0dev/OSINT-Tools-Directory/issues" class="footer-link" target="_blank">Añadir una herramienta vía GitHub Issues &rarr;</a>
+        </div>
     </footer>
 
     <script src="app.js"></script>
