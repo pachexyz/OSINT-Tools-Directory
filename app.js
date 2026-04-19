@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ordenar explícitamente por id descendente
         allTools.sort((a, b) => b.id - a.id);
         
-        // Marcar las top 5 como nuevas
-        for(let i = 0; i < Math.min(5, allTools.length); i++) {
+        // Marcar las top 3 como nuevas
+        for(let i = 0; i < Math.min(3, allTools.length); i++) {
             allTools[i].isNew = true;
         }
 
