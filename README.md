@@ -27,9 +27,6 @@ El proceso para añadir herramientas a la página web está automatizado, pero r
 3. Deja un comentario con el enlace de la herramienta que te gustaría añadir y por qué es útil.
 4. ¡Y magia! La Inteligencia Artificial analizará el enlace, extraerá la información, la traducirá y la añadirá automáticamente al JSON de la base de datos de la web.
 
-> [!NOTE]
-> Solo el propietario del repositorio (`fud0dev`) tiene permisos para que la Acción de GitHub ejecute el comando `/add-tool`. Esto garantiza la calidad de las herramientas y evita abusos y spam en el sistema.
-
 ---
 
 ## 🛠️ Tecnologías Utilizadas
