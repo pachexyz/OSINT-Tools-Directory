@@ -1,12 +1,782 @@
 [
   {
     "id": 1,
-    "nombre": "Git-Hound",
+    "nombre": "GIT-HOUND",
     "url": "https://github.com/tillson/git-hound",
     "descripcion": "Encuentra información sensible expuesta en repositorios de GitHub. Ideal para reconocimiento de código.",
     "categoria": "GitHub",
     "riesgo": "🟢 Bajo",
-    "tags": ["GitHub", "Datos Sensibles", "Reconocimiento"],
-    "fecha_agregado": "2026-04-19"
+    "tags": [
+      "GitHub",
+      "Reconocimiento",
+      "Datos Sensibles"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "CROSSLINKED",
+    "url": "https://github.com/m8sec/CrossLinked",
+    "descripcion": "Enumeración de LinkedIn mediante scraping de motores de búsqueda para recopilar nombres de empleados de una organización.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Scraping",
+      "LinkedIn",
+      "Enumeración"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "GITGRABER",
+    "url": "https://github.com/hisxo/gitGraber",
+    "descripcion": "Busca y clona información sensible en repositorios de GitHub.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "GitHub",
+      "Reconocimiento",
+      "Datos Sensibles"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "INSTALOOTER",
+    "url": "https://pypi.org/project/instalooter/",
+    "descripcion": "Descarga imágenes y videos de perfiles de Instagram sin necesidad de acceso a la API.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Media",
+      "Instagram",
+      "Descargador"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "EXPORT COMMENTS",
+    "url": "https://exportcomments.com/",
+    "descripcion": "Exporta todos los comentarios de publicaciones en redes sociales a Excel.",
+    "categoria": "Facebook",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Facebook",
+      "Instagram",
+      "Comentarios"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "PROFILE ANALYZER",
+    "url": "https://inflact.com/tools/profile-analyzer/",
+    "descripcion": "Analiza cualquier perfil público de Instagram. Gratuito, ilimitado y sin registro.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Estadísticas",
+      "Análisis de Perfil",
+      "Instagram"
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "SNAPCHAT-MAPSCRAPER",
+    "url": "https://github.com/nemec/snapchat-map-scraper",
+    "descripcion": "Extrae historias públicas de Snapchat desde el Snap Map.",
+    "categoria": "Snapchat",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Geolocalización",
+      "Snapchat",
+      "Scraping"
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "GITGOT",
+    "url": "https://github.com/BishopFox/GitGot",
+    "descripcion": "Herramienta semiautomatizada con retroalimentación para auditar repositorios Git.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Auditoría",
+      "GitHub",
+      "Seguridad"
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "GITHUB DORKS",
+    "url": "https://github.com/techgaun/github-dorks",
+    "descripcion": "Colección de consultas de búsqueda (dorks) para encontrar información sensible en GitHub.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "GitHub",
+      "Datos Sensibles",
+      "Dorks"
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "REVERSECONTACT",
+    "url": "https://www.reversecontact.com/",
+    "descripcion": "Encuentra perfiles de LinkedIn asociados a cualquier dirección de correo electrónico.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "LinkedIn",
+      "Email",
+      "Búsqueda de Perfil"
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "GH ARCHIVE",
+    "url": "https://www.gharchive.org/",
+    "descripcion": "Dataset público de actividad de GitHub: eventos, metadatos y más.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "GitHub",
+      "Análisis de Actividad",
+      "Dataset"
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "SOCIAL SEARCHER",
+    "url": "https://www.social-searcher.com/",
+    "descripcion": "Monitorea menciones públicas en redes sociales y la web en tiempo real.",
+    "categoria": "Redes Sociales",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Monitoreo",
+      "Búsqueda",
+      "Redes Sociales"
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "DIGITAL PRIVACY",
+    "url": "https://github.com/ffffffff0x/Digital-Privacy",
+    "descripcion": "Colección de recursos y herramientas para mejorar la privacidad y seguridad digital.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "GitHub",
+      "Seguridad",
+      "Privacidad"
+    ]
+  },
+  {
+    "id": 14,
+    "nombre": "LINKEDINT",
+    "url": "https://github.com/vysecurity/LinkedInt",
+    "descripcion": "Inteligencia OSINT específica para LinkedIn.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reconocimiento",
+      "LinkedIn",
+      "Inteligencia"
+    ]
+  },
+  {
+    "id": 15,
+    "nombre": "INSPY",
+    "url": "https://github.com/jobroche/InSpy",
+    "descripcion": "Herramienta de enumeración de LinkedIn basada en Python.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reconocimiento",
+      "LinkedIn",
+      "Enumeración"
+    ]
+  },
+  {
+    "id": 16,
+    "nombre": "FOLLOWERWONK",
+    "url": "https://followerwonk.com/",
+    "descripcion": "Encuentra cuentas de Twitter por biografía y proporciona análisis avanzados de seguidores.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Descubrimiento",
+      "Búsqueda por Bio"
+    ]
+  },
+  {
+    "id": 17,
+    "nombre": "SOCIALDATA API",
+    "url": "https://socialdata.tools/",
+    "descripcion": "Alternativa no oficial a la API de Twitter para scraping de tweets históricos, perfiles y Spaces.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "API",
+      "Scraping"
+    ]
+  },
+  {
+    "id": 18,
+    "nombre": "SNAPINTEL",
+    "url": "https://github.com/Kr0wZ/SnapIntel",
+    "descripcion": "Herramienta Python para obtener información sobre usuarios de Snapchat.",
+    "categoria": "Snapchat",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Información de Usuario",
+      "Snapchat",
+      "Reconocimiento"
+    ]
+  },
+  {
+    "id": 19,
+    "nombre": "PICKUKI",
+    "url": "https://www.picuki.com/",
+    "descripcion": "Navega contenido público de Instagram sin necesidad de iniciar sesión.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Navegación Anónima",
+      "Instagram",
+      "Búsqueda"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "SOLG",
+    "url": "https://github.com/yezz123/SoIG",
+    "descripcion": "Herramienta OSINT de Instagram que extrae amplia información de una cuenta.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reconocimiento",
+      "Análisis de Perfil",
+      "Instagram"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "UNIVERSAL REDDIT SCRAPER (URS)",
+    "url": "https://github.com/JosephLai241/URS",
+    "descripcion": "Scraping de datos de Reddit en Python para análisis masivo.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reddit",
+      "Análisis de Datos",
+      "Scraping"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "TWITTER VIDEO DOWNLOADER",
+    "url": "https://twittervideodownloader.com/",
+    "descripcion": "Descarga videos y GIFs directamente desde tweets.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Media",
+      "Descargador"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "DOWNLOAD TWITTER DATA",
+    "url": "https://www.twtdata.com/",
+    "descripcion": "Exporta datos de Twitter a CSV por usuario, keyword, hashtag, lista o Space.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Exportación de Datos",
+      "Descargador"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "SOCID_EXTRACTOR",
+    "url": "https://github.com/soxoj/socid-extractor",
+    "descripcion": "Extrae información de usuario de Reddit y otras redes sociales.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Información de Usuario",
+      "Reddit",
+      "Reconocimiento"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "TOUTATIS",
+    "url": "https://pypi.org/project/toutatis/",
+    "descripcion": "Recupera información privada (teléfono, email, ID) de cuentas de Instagram vía API.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Datos Privados",
+      "Instagram",
+      "API"
+    ]
+  },
+  {
+    "id": 26,
+    "nombre": "LOOKUP-ID.COM",
+    "url": "https://lookup-id.com/",
+    "descripcion": "Encuentra el ID de Facebook de cualquier perfil o grupo.",
+    "categoria": "Facebook",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Facebook",
+      "Perfil",
+      "Búsqueda de ID"
+    ]
+  },
+  {
+    "id": 27,
+    "nombre": "DUMPITBLUE+",
+    "url": "https://chromewebstore.google.com/detail/dumpitblue+/igmgknoioooacbcpcfgjigbaajpelbfe",
+    "descripcion": "Extensión Chrome para volcar información de Facebook para análisis o reportes.",
+    "categoria": "Facebook",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Facebook",
+      "Extracción de Datos",
+      "Análisis"
+    ]
+  },
+  {
+    "id": 28,
+    "nombre": "STALKFACE",
+    "url": "https://stalkface.com/en/",
+    "descripcion": "Kit de herramientas de reconocimiento para perfiles de Facebook.",
+    "categoria": "Facebook",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reconocimiento",
+      "Facebook",
+      "Análisis de Perfil"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "SEARCH IS BACK",
+    "url": "https://searchisback.com/",
+    "descripcion": "Busca personas y eventos en Facebook por ubicación, relaciones y más.",
+    "categoria": "Facebook",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Facebook",
+      "Búsqueda",
+      "Eventos"
+    ]
+  },
+  {
+    "id": 30,
+    "nombre": "IMGINN.IO",
+    "url": "https://imginn.io/",
+    "descripcion": "Visualiza y descarga todo el contenido público de Instagram en un solo lugar.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Media",
+      "Instagram",
+      "Descargador"
+    ]
+  },
+  {
+    "id": 31,
+    "nombre": "INSTAHUNT",
+    "url": "https://instahunt.huntintel.io/",
+    "descripcion": "Encuentra publicaciones de redes sociales relacionadas con una ubicación geográfica.",
+    "categoria": "Instagram",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Búsqueda",
+      "Geolocalización",
+      "Instagram"
+    ]
+  },
+  {
+    "id": 32,
+    "nombre": "RECRUITEM",
+    "url": "https://recruitin.net/",
+    "descripcion": "Crea cadenas booleanas de Google para buscar perfiles públicos en redes sociales.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Búsqueda Booleana",
+      "LinkedIn",
+      "Reclutamiento"
+    ]
+  },
+  {
+    "id": 33,
+    "nombre": "LINKEDIN SEARCH ENGINE",
+    "url": "https://cse.google.com/cse?cx=daaf18e804f81bed0",
+    "descripcion": "Motor de búsqueda programable de Google para perfiles de LinkedIn.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "LinkedIn",
+      "Perfil",
+      "Motor de Búsqueda"
+    ]
+  },
+  {
+    "id": 34,
+    "nombre": "LINKEDIN SEARCH TOOL",
+    "url": "https://inteltechniques.com/tools/Linkedin.html",
+    "descripcion": "Interfaz multi-herramienta para investigaciones OSINT en LinkedIn.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "OSINT",
+      "LinkedIn",
+      "Herramientas"
+    ]
+  },
+  {
+    "id": 35,
+    "nombre": "WAYBACK TWEETS",
+    "url": "https://waybacktweets.streamlit.app/",
+    "descripcion": "Visualiza tweets archivados en Wayback Machine sin abrir cada enlace manualmente.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Archivado",
+      "Wayback Machine"
+    ]
+  },
+  {
+    "id": 36,
+    "nombre": "MEMORY.LOL",
+    "url": "https://memory.lol/app/",
+    "descripcion": "Información histórica sobre usuarios de Twitter: nombres anteriores, actividad, etc.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Datos Históricos",
+      "Usuario"
+    ]
+  },
+  {
+    "id": 37,
+    "nombre": "TINFOLEAK",
+    "url": "https://tinfoleak.com/",
+    "descripcion": "Busca filtraciones e información expuesta de usuarios de Twitter.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Filtraciones",
+      "Reconocimiento"
+    ]
+  },
+  {
+    "id": 38,
+    "nombre": "NETWORK TOOL",
+    "url": "https://osome.iu.edu/tools/osomenet/",
+    "descripcion": "Explora cómo se propaga la información en Twitter con una red interactiva.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Análisis de Redes",
+      "Propagación"
+    ]
+  },
+  {
+    "id": 39,
+    "nombre": "AIRTABLE",
+    "url": "https://airtable.com/appyDhNeSetZU0rIw/shrceHfvukijgln9q/tblxgilU0SzfXNEwS/viwde4ACDDOpeJ8aO",
+    "descripcion": "Directorio colaborativo con múltiples herramientas OSINT organizadas en tabla.",
+    "categoria": "OSINT",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Multi-herramienta",
+      "OSINT",
+      "Directorio"
+    ]
+  },
+  {
+    "id": 40,
+    "nombre": "DELETED TWEET FINDER",
+    "url": "https://cache.digitaldigging.org/",
+    "descripcion": "Busca tweets eliminados en múltiples servicios de archivo simultáneamente.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Archivado",
+      "Tweets Eliminados"
+    ]
+  },
+  {
+    "id": 41,
+    "nombre": "TWITONOMY",
+    "url": "https://www.twitonomy.com/",
+    "descripcion": "Analíticas avanzadas de Twitter: estadísticas de cuenta, engagement, seguidores.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Insights",
+      "Analíticas"
+    ]
+  },
+  {
+    "id": 42,
+    "nombre": "DOWNALBUM",
+    "url": "https://chromewebstore.google.com/detail/downalbum/cgjnhhjpfcdhbhlcmmjppicjmgfkppok",
+    "descripcion": "Extensión Chrome para descargar álbumes completos de fotos de Pinterest y otras webs.",
+    "categoria": "Pinterest",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Pinterest",
+      "Fotos",
+      "Descargador"
+    ]
+  },
+  {
+    "id": 43,
+    "nombre": "PINGROUPIE",
+    "url": "https://pingroupie.com/",
+    "descripcion": "Meta-buscador de Pinterest: descubre tableros colaborativos, influencers y palabras clave.",
+    "categoria": "Pinterest",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Pinterest",
+      "Búsqueda",
+      "Tableros"
+    ]
+  },
+  {
+    "id": 44,
+    "nombre": "F5BOT",
+    "url": "https://f5bot.com/",
+    "descripcion": "Recibe notificaciones por email cuando se publican posts de Reddit con tus palabras clave.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Monitoreo",
+      "Reddit",
+      "Palabras Clave"
+    ]
+  },
+  {
+    "id": 45,
+    "nombre": "MOSTLY HARMLESS",
+    "url": "https://kerrick.github.io/Mostly-Harmless/#features",
+    "descripcion": "Suite de herramientas Reddit: análisis de usuario, comparación de subreddits y más.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Análisis de Usuario",
+      "Reddit",
+      "Subreddits"
+    ]
+  },
+  {
+    "id": 46,
+    "nombre": "RDDDECK",
+    "url": "https://rdddeck.com/",
+    "descripcion": "Panel de control en tiempo real para monitorear múltiples comunidades de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Dashboard",
+      "Monitoreo",
+      "Reddit"
+    ]
+  },
+  {
+    "id": 47,
+    "nombre": "REDDIT ARCHIVE",
+    "url": "https://www.redditarchive.com/",
+    "descripcion": "Archivo histórico de publicaciones y comentarios de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Datos Históricos",
+      "Archivado",
+      "Reddit"
+    ]
+  },
+  {
+    "id": 48,
+    "nombre": "REDDIT COMMENT SEARCH",
+    "url": "https://redditcommentsearch.com/",
+    "descripcion": "Busca comentarios y conversaciones específicas en toda la red de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reddit",
+      "Conversaciones",
+      "Búsqueda de Comentarios"
+    ]
+  },
+  {
+    "id": 49,
+    "nombre": "REDDIT HACKS",
+    "url": "https://github.com/EdOverflow/hacks",
+    "descripcion": "Colección de trucos y técnicas avanzadas para usuarios de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Hacks",
+      "Reddit",
+      "Avanzado"
+    ]
+  },
+  {
+    "id": 50,
+    "nombre": "REDDIT SEARCH",
+    "url": "https://realsrikar.github.io/reddit-search/",
+    "descripcion": "Herramientas para buscar y descubrir contenido en Reddit con filtros avanzados.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Descubrimiento",
+      "Reddit",
+      "Búsqueda"
+    ]
+  },
+  {
+    "id": 51,
+    "nombre": "REDDIT STREAM",
+    "url": "https://reddit-stream.com/",
+    "descripcion": "Transmisión en vivo de comentarios de Reddit para seguir discusiones en tiempo real.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Live",
+      "Reddit",
+      "Comentarios"
+    ]
+  },
+  {
+    "id": 52,
+    "nombre": "REDDIT USER ANALYSER",
+    "url": "https://reddit-user-analyser.netlify.app/",
+    "descripcion": "Analiza y visualiza la actividad y comportamiento de usuarios de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Visualización",
+      "Análisis de Usuario",
+      "Reddit"
+    ]
+  },
+  {
+    "id": 53,
+    "nombre": "REDECTIVE",
+    "url": "https://redective.com/",
+    "descripcion": "Investiga y analiza usuarios de Reddit basándose en su historial de publicaciones.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Análisis de Usuario",
+      "Reconocimiento",
+      "Reddit"
+    ]
+  },
+  {
+    "id": 54,
+    "nombre": "REDITR",
+    "url": "http://reditr.com/",
+    "descripcion": "Cliente de escritorio para Reddit con interfaz limpia e intuitiva.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Navegación",
+      "Cliente de Escritorio",
+      "Reddit"
+    ]
+  },
+  {
+    "id": 55,
+    "nombre": "WISDOM OF REDDIT",
+    "url": "https://wisdomofreddit.com/",
+    "descripcion": "Colección curada de las citas y comentarios más perspicaces de Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Reddit",
+      "Curación",
+      "Citas"
+    ]
+  },
+  {
+    "id": 56,
+    "nombre": "FOLLER",
+    "url": "https://foller.me/",
+    "descripcion": "Motor de búsqueda de personas: encuentra perfiles sociales, registros públicos y más.",
+    "categoria": "Twitter",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Twitter",
+      "Búsqueda de Personas",
+      "Redes Sociales"
+    ]
+  },
+  {
+    "id": 57,
+    "nombre": "INTELLIGENCE X LINKEDIN",
+    "url": "https://intelx.io/tools?tab=linkedin",
+    "descripcion": "Herramienta web para búsqueda avanzada de personas y perfiles en LinkedIn.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Búsqueda",
+      "LinkedIn",
+      "Perfil"
+    ]
+  },
+  {
+    "id": 58,
+    "nombre": "FIND GITHUB USER ID",
+    "url": "https://caius.github.io/github_id/",
+    "descripcion": "Encuentra el ID único de un usuario de GitHub para investigación en repositorios.",
+    "categoria": "GitHub",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "GitHub",
+      "ID de Usuario",
+      "Repositorio"
+    ]
+  },
+  {
+    "id": 59,
+    "nombre": "FREE PEOPLE SEARCH TOOL",
+    "url": "https://freepeoplesearchtool.com/",
+    "descripcion": "Herramienta web para localizar personas en redes sociales y registros públicos.",
+    "categoria": "LinkedIn",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Online",
+      "Búsqueda de Personas",
+      "LinkedIn"
+    ]
+  },
+  {
+    "id": 60,
+    "nombre": "REDDIT SHELL",
+    "url": "https://redditshell.com/",
+    "descripcion": "Interfaz de línea de comandos para navegar e interactuar con Reddit.",
+    "categoria": "Reddit",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Navegación",
+      "CLI",
+      "Reddit"
+    ]
   }
 ]
