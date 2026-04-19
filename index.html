@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Tools Directory | fud0dev</title>
+    <meta name="description" content="Directorio centralizado de herramientas OSINT automatizado con IA.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">_OSINT_DIR ></div>
+        <p>Directorio de herramientas de inteligencia y seguridad actualizado automáticamente.</p>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchBar" placeholder="Buscar herramientas por nombre, descripción o tags...">
+        <div class="filter-chips" id="categoryFilters">
+            <span class="chip active" data-category="all">Todos</span>
+            <!-- Se llenará dinámicamente -->
+        </div>
+    </div>
+
+    <section class="featured-section" id="featuredSection" style="display: none;">
+        <h2 class="section-title">✨ Últimas Novedades</h2>
+        <div class="featured-grid" id="featuredGrid">
+            <!-- Herramientas recientes aquí -->
+        </div>
+    </section>
+
+    <main class="tool-grid" id="mainGrid">
+        <!-- Todas las herramientas aquí -->
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 2rem; color: var(--text-secondary); font-size: 0.9rem; border-top: 1px solid var(--border-color); margin-top: 4rem;">
+        <p>Proyecto mantenido por <a href="https://github.com/fud0dev" style="color: var(--accent-color);">fud0dev</a></p>
+        <p style="margin-top: 0.5rem;">Automatizado con Llama 3.3 via Groq</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+document.addEventListener('DOMContentLoaded', () => {
+    let allTools = [];
+    const mainGrid = document.getElementById('mainGrid');
+    const featuredGrid = document.getElementById('featuredGrid');
+    const featuredSection = document.getElementById('featuredSection');
+    const searchBar = document.getElementById('searchBar');
+    const categoryFilters = document.getElementById('categoryFilters');
+
+    // Cargar datos
+    fetch('data/tools.json')
+        .then(response => response.json())
+        .then(data => {
+            allTools = data;
+            init();
+        })
+        .catch(err => {
+            console.error("Error cargando herramientas:", err);
+            // Datos de prueba para pre-render si el archivo no existe
+            allTools = []; 
+        });
+
+    function init() {
+        renderCategories();
+        renderTools(allTools);
+        renderFeatured();
+    }
+
+    function renderCategories() {
+        const categories = ['all', ...new Set(allTools.map(t => t.categoria))];
+        categoryFilters.innerHTML = '';
+        categories.forEach(cat => {
+            const chip = document.createElement('span');
+            chip.className = `chip ${cat === 'all' ? 'active' : ''}`;
+            chip.textContent = cat === 'all' ? 'Todos' : cat;
+            chip.dataset.category = cat;
+            chip.addEventListener('click', () => {
+                document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                filterTools();
+            });
+            categoryFilters.appendChild(chip);
+        });
+    }
+
+    function renderTools(tools) {
+        mainGrid.innerHTML = '';
+        tools.forEach(tool => {
+            const card = createCard(tool);
+            mainGrid.appendChild(card);
+        });
+    }
+
+    function renderFeatured() {
+        // Las últimas 5 herramientas según su ID o fecha
+        const featured = allTools.sort((a, b) => b.id - a.id).slice(0, 5);
+        if (featured.length > 0) {
+            featuredSection.style.display = 'block';
+            featuredGrid.innerHTML = '';
+            featured.forEach(tool => {
+                featuredGrid.appendChild(createCard(tool, true));
+            });
+        }
+    }
+
+    function createCard(tool, isFeatured = false) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        if (isFeatured) card.style.borderColor = 'var(--accent-color)';
+
+        card.innerHTML = `
+            <div class="card-title">${tool.nombre}</div>
+            <div class="card-desc">${tool.descripcion}</div>
+            <div class="card-tags">
+                ${tool.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            </div>
+            <div class="card-footer">
+                <span class="risk-badge">${tool.riesgo}</span>
+                <a href="${tool.url}" target="_blank" class="btn-visit">Visitar Tool _</a>
+            </div>
+        `;
+        return card;
+    }
+
+    function filterTools() {
+        const searchTerm = searchBar.value.toLowerCase();
+        const activeCategory = document.querySelector('.chip.active').dataset.category;
+
+        const filtered = allTools.filter(tool => {
+            const matchesSearch = tool.nombre.toLowerCase().includes(searchTerm) || 
+                                tool.descripcion.toLowerCase().includes(searchTerm) ||
+                                tool.tags.some(t => t.toLowerCase().includes(searchTerm));
+            const matchesCategory = activeCategory === 'all' || tool.categoria === activeCategory;
+            return matchesSearch && matchesCategory;
+        });
+
+        renderTools(filtered);
+    }
+
+    searchBar.addEventListener('input', filterTools);
+});
