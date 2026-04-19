@@ -25,13 +25,7 @@ El proceso para añadir herramientas a la página web está automatizado, pero r
 1. Ve a la pestaña **[Issues](https://github.com/fud0dev/OSINT-Tools-Directory/issues)** de este repositorio.
 2. Haz clic en **New Issue**.
 3. Deja un comentario con el enlace de la herramienta que te gustaría añadir y por qué es útil.
-4. Una vez la revise, el administrador del proyecto (`fud0dev`) comentará en tu issue con el comando mágico:
-   
-   ```bash
-   /add-tool https://url-de-tu-herramienta.com
-   ```
-
-5. ¡Y magia! La Inteligencia Artificial analizará el enlace, extraerá la información, la traducirá y la añadirá automáticamente al JSON de la base de datos de la web.
+4. ¡Y magia! La Inteligencia Artificial analizará el enlace, extraerá la información, la traducirá y la añadirá automáticamente al JSON de la base de datos de la web.
 
 > [!NOTE]
 > Solo el propietario del repositorio (`fud0dev`) tiene permisos para que la Acción de GitHub ejecute el comando `/add-tool`. Esto garantiza la calidad de las herramientas y evita abusos y spam en el sistema.
