@@ -1,0 +1,96 @@
+name: Issue Command Tool Adder
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+jobs:
+  add-tool-from-comment:
+    # Solo ejecutar si el comentario contiene /add-tool y quien lo hace es el dueño (fud0dev)
+    if: >
+      contains(github.event.comment.body, '/add-tool') &&
+      github.event.comment.user.login == 'fud0dev'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Add reaction to comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests feedparser groq
+
+      - name: Extract URL and Run Script
+        id: process_tool
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          # Extraer la URL de la linea que contiene /add-tool usando regex o awk
+          # Asumimos que la sintaxis es "/add-tool https://..."
+          URL=$(echo "$COMMENT_BODY" | grep -oP '(?<=/add-tool\s)https?://[^\s]+')
+          if [ -z "$URL" ]; then
+            echo "::error::No se encontró una URL válida en el comando."
+            exit 1
+          fi
+          echo "URL Extraída: $URL"
+          
+          # Ejecutar nuestro script de IA para esa URL
+          python scripts/process_issue.py "$URL"
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tools.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "✨ Web: Add tool from issue #${{ github.event.issue.number }} [skip ci]" && git push)
+
+      - name: Add Success Reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'rocket'
+            });
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ ¡La herramienta ha sido aprobada por la IA y añadida a la web exitosamente!'
+            });
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
