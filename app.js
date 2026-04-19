@@ -196,4 +196,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     searchBar.addEventListener('input', filterTools);
+
+    // --- Efecto Cyberpunk Typewriter para el subtítulo ---
+    const subtitle = document.getElementById('mainSubtitle');
+    if (subtitle) {
+        const text = subtitle.textContent.trim().replace(/\s+/g, ' '); // Clean HTML spaces
+        subtitle.textContent = '';
+        let charIndex = 0;
+        // Creamos la barra parpadeante
+        subtitle.innerHTML = '<span id="typewriter-cursor">|</span>';
+        const cursor = document.getElementById('typewriter-cursor');
+        
+        function typeWriter() {
+            if (charIndex < text.length) {
+                subtitle.insertBefore(document.createTextNode(text.charAt(charIndex)), cursor);
+                charIndex++;
+                setTimeout(typeWriter, Math.random() * 30 + 10); // Velocidad aleatoria táctica
+            } else {
+                // Al terminar, parpadear unas veces y fijar
+                cursor.style.animation = "blink 1s step-end infinite";
+            }
+        }
+        setTimeout(typeWriter, 500); // Pequeño retraso al cargar
+    }
 });
