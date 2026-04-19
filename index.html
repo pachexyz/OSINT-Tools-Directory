@@ -46,6 +46,10 @@
         <!-- Todas las herramientas aquí -->
     </main>
 
+    <div style="text-align: center; margin: 3rem 0;">
+        <button id="loadMoreBtn" class="btn-primary" style="display: none;">Cargar Más Herramientas</button>
+    </div>
+
     <footer>
         <div class="footer-content">
             <p>Directorio mantenido por <strong>fud0dev</strong></p>
@@ -54,6 +58,24 @@
                 una herramienta vía GitHub Issues &rarr;</a>
         </div>
     </footer>
+
+    <!-- Modal Overlay -->
+    <div id="toolModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">Tool Name</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc" class="modal-desc"></p>
+                <div id="modalTags" class="card-tags"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="modalLink" target="_blank" class="btn-primary">Visitar Repositorio 🚀</a>
+                <button id="modalCopyBtn" class="btn-secondary">🔗 Copiar Enlace</button>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

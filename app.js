@@ -1,10 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allTools = [];
+    let filteredTools = [];
+    let visibleCount = 21;
+    const ITEMS_PER_PAGE = 21;
+
     const mainGrid = document.getElementById('mainGrid');
-    const featuredGrid = document.getElementById('featuredGrid');
-    const featuredSection = document.getElementById('featuredSection');
     const searchBar = document.getElementById('searchBar');
     const categoryFilters = document.getElementById('categoryFilters');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+    // Elementos del Modal
+    const toolModal = document.getElementById('toolModal');
+    const modalClose = document.getElementById('modalClose');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalTags = document.getElementById('modalTags');
+    const modalLink = document.getElementById('modalLink');
+    const modalCopyBtn = document.getElementById('modalCopyBtn');
+
+    // Utilidad para crear URLs amigables (slugs)
+    function slugify(text) {
+        return text.toString().toLowerCase()
+            .replace(/\s+/g, '-')           
+            .replace(/[^\w\-]+/g, '')       
+            .replace(/\-\-+/g, '-')         
+            .replace(/^-+/, '')             
+            .replace(/-+$/, '');            
+    }
 
     // Cargar datos
     fetch('data/tools.json')
@@ -15,21 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => {
             console.error("Error cargando herramientas:", err);
-            // Datos de prueba para pre-render si el archivo no existe
             allTools = []; 
         });
 
     function init() {
-        // Sort explicitly by id descending so newest are on top
+        // Ordenar explícitamente por id descendente
         allTools.sort((a, b) => b.id - a.id);
         
-        // Mark top 5 as featured/new
+        // Marcar las top 5 como nuevas
         for(let i = 0; i < Math.min(5, allTools.length); i++) {
             allTools[i].isNew = true;
         }
 
+        filteredTools = [...allTools];
         renderCategories();
-        renderTools(allTools);
+        renderTools();
+        
+        // Escuchar cambios de URL para los modales
+        handleHashRoute();
+        window.addEventListener('hashchange', handleHashRoute);
     }
 
     function renderCategories() {
@@ -49,18 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function renderTools(tools) {
+    function renderTools() {
         mainGrid.innerHTML = '';
-        tools.forEach(tool => {
-            const card = createCard(tool);
-            mainGrid.appendChild(card);
+        const toolsToShow = filteredTools.slice(0, visibleCount);
+        
+        toolsToShow.forEach(tool => {
+            mainGrid.appendChild(createCard(tool));
         });
+
+        // Mostrar u ocultar botón de cargar más
+        if (visibleCount < filteredTools.length) {
+            loadMoreBtn.style.display = 'inline-flex';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
     }
 
+    loadMoreBtn.addEventListener('click', () => {
+        visibleCount += ITEMS_PER_PAGE;
+        renderTools();
+    });
+
     function createCard(tool) {
+        const slug = slugify(tool.nombre);
         const linkWrapper = document.createElement('a');
-        linkWrapper.href = tool.url;
-        linkWrapper.target = "_blank";
+        linkWrapper.href = `#${slug}`;
         linkWrapper.className = 'card-link';
 
         const card = document.createElement('div');
@@ -84,11 +123,67 @@ document.addEventListener('DOMContentLoaded', () => {
         return linkWrapper;
     }
 
+    // --- Lógica del Modal y Deep Linking ---
+    function handleHashRoute() {
+        const hash = window.location.hash.substring(1); 
+        if (!hash) {
+            closeModal();
+            return;
+        }
+
+        const tool = allTools.find(t => slugify(t.nombre) === hash);
+        if (tool) {
+            openModal(tool);
+        } else {
+            closeModal();
+        }
+    }
+
+    function openModal(tool) {
+        modalTitle.textContent = tool.nombre;
+        modalDesc.textContent = tool.descripcion_larga || tool.descripcion; // Preparado para futuras descripciones largas
+        modalTags.innerHTML = tool.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+        modalLink.href = tool.url;
+        
+        modalCopyBtn.onclick = () => {
+            const link = window.location.origin + window.location.pathname + '#' + slugify(tool.nombre);
+            navigator.clipboard.writeText(link).then(() => {
+                const originalText = modalCopyBtn.textContent;
+                modalCopyBtn.textContent = '✅';
+                setTimeout(() => {
+                    modalCopyBtn.textContent = originalText;
+                }, 2000);
+            });
+        };
+
+        toolModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeModal() {
+        toolModal.classList.remove('active');
+        document.body.style.overflow = '';
+        if (window.location.hash) {
+            history.replaceState(null, null, ' '); // Limpia la URL sin recargar
+        }
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    toolModal.addEventListener('click', (e) => {
+        if (e.target === toolModal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && toolModal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    // ----------------------------------------
+
     function filterTools() {
         const searchTerm = searchBar.value.toLowerCase();
         const activeCategory = document.querySelector('.chip.active').dataset.category;
 
-        const filtered = allTools.filter(tool => {
+        filteredTools = allTools.filter(tool => {
             const matchesSearch = tool.nombre.toLowerCase().includes(searchTerm) || 
                                 tool.descripcion.toLowerCase().includes(searchTerm) ||
                                 tool.tags.some(t => t.toLowerCase().includes(searchTerm));
@@ -96,7 +191,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return matchesSearch && matchesCategory;
         });
 
-        renderTools(filtered);
+        visibleCount = ITEMS_PER_PAGE; 
+        renderTools();
     }
 
     searchBar.addEventListener('input', filterTools);
