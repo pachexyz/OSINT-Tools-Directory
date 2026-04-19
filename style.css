@@ -33,11 +33,20 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     font-size: 2.25rem;
     font-weight: 700;
     color: var(--accent-color);
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.logo-icon {
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
 }
 
 .subtitle {
@@ -161,11 +170,17 @@ header {
 .card-title {
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: text-shadow 0.2s ease;
+}
+
+.card-link:hover .card-title {
+    text-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
 }
 
 /* Arrow Icon that appears on hover */
