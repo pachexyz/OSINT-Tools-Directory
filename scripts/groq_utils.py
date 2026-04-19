@@ -26,15 +26,13 @@ def get_tool_analysis(api_key, repo_info):
     TAREAS:
     1. Traduce la descripción al español de forma profesional y concisa (máximo 2 frases).
     2. Categoriza la herramienta en UNA de estas categorías: [GitHub, LinkedIn, Instagram, Twitter, Facebook, Snapchat, Reddit, Pinterest, OSINT General, Otros].
-    3. Asigna un nivel de riesgo (🔴 Alto | 🟠 Medio | 🟢 Bajo) basándote en su funcionalidad (ej: scraping agresivo es Alto/Medio, visualización pública es Bajo).
-    4. Sugiere 3 tags cortos en español.
+    3. Sugiere 3 tags cortos en español.
 
     REGLA: Devuelve ÚNICAMENTE un objeto JSON con esta estructura exacta:
     {{
         "nombre": "nombre",
         "descripcion_es": "descripción traducida",
         "categoria": "Categoría elegida",
-        "riesgo": "🔴 Alto | 🟠 Medio | 🟢 Bajo",
         "tags": ["tag1", "tag2", "tag3"]
     }}
     """

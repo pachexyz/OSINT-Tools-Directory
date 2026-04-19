@@ -98,7 +98,6 @@ def main():
                 "url": url,
                 "descripcion": analysis['descripcion_es'],
                 "categoria": analysis['categoria'],
-                "riesgo": analysis['riesgo'],
                 "tags": analysis['tags'],
                 "fecha_agregado": datetime.now().strftime('%Y-%m-%d')
             }

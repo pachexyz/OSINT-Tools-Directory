@@ -55,7 +55,6 @@ def main():
             "url": url,
             "descripcion": analysis.get('descripcion_es', 'Sin descripción'),
             "categoria": analysis.get('categoria', 'Otros'),
-            "riesgo": analysis.get('riesgo', '🟢 Bajo'),
             "tags": analysis.get('tags', []),
             "fecha_agregado": datetime.now().strftime('%Y-%m-%d')
         }
