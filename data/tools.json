@@ -1198,5 +1198,19 @@
       "Enlaces"
     ],
     "fecha_agregado": "2026-04-19"
+  },
+  {
+    "id": 91,
+    "nombre": "IRWatch",
+    "url": "https://irwatch.org",
+    "descripcion": "IRWatch es una herramienta para monitorear y analizar actividades de inteligencia y seguridad en línea, proporcionando información y recursos para la comunidad de inteligencia y seguridad.",
+    "categoria": "OSINT General",
+    "riesgo": "🟢 Bajo",
+    "tags": [
+      "Inteligencia",
+      "Seguridad",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-19"
   }
 ]
