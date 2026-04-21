@@ -1303,5 +1303,18 @@
       "EquipoAzul"
     ],
     "fecha_agregado": "2026-04-20"
+  },
+  {
+    "id": 99,
+    "nombre": "User Scanner",
+    "url": "https://github.com/kaifcodec/user-scanner",
+    "descripcion": "Herramienta para escanear y analizar perfiles de usuario en diversas plataformas. Ayuda a identificar y recopilar información sobre usuarios en redes sociales y otros sitios web.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis de Perfil",
+      "OSINT",
+      "Escaner de Usuarios"
+    ],
+    "fecha_agregado": "2026-04-21"
   }
 ]
