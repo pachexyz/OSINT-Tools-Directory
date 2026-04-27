@@ -1316,5 +1316,395 @@
       "Escaner de Usuarios"
     ],
     "fecha_agregado": "2026-04-21"
+  },
+  {
+    "id": 100,
+    "nombre": "ctf-super-hub",
+    "url": "https://github.com/asdfgh1445/ctf-super-hub",
+    "descripcion": "Herramienta de CTF y habilidades de inversión para usuarios principiantes, con funcionalidades como flujo automático, tormenta de ideas, modo de enseñanza, modo de competencia y modo de solo pistas. Ofrece una plataforma integral para el aprendizaje y la práctica de técnicas de CTF.",
+    "categoria": "OSINT General",
+    "tags": [
+      "CTF",
+      "Seguridad",
+      "Herramienta"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 101,
+    "nombre": "webdna",
+    "url": "https://github.com/xtrafr/webdna",
+    "descripcion": "Una herramienta simple y rápida para analizar el funcionamiento interno de cualquier sitio web. Permite visualizar servidores, seguridad, colores y archivos en un panel de control limpio.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis Web",
+      "Seguridad",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 102,
+    "nombre": "birdy-edwards-lite",
+    "url": "https://github.com/jeet-ganguly/birdy-edwards-lite",
+    "descripcion": "Plataforma de inteligencia de perfil de Facebook de código abierto con análisis de redes de interacción, gráficos de analítica de co-interactores y clustering de caras con CNN. No requiere LLM, Docker ni dependencias en la nube.",
+    "categoria": "Facebook",
+    "tags": [
+      "Inteligencia de perfil",
+      "Análisis de redes",
+      "OSINT Facebook"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 103,
+    "nombre": "RepoHunter",
+    "url": "https://github.com/AxthonyV/RepoHunter",
+    "descripcion": "Un bot automático sigiloso que busca repositorios de GitHub de tendencia diaria. Utiliza un navegador headless en Rust para sortear detecciones anti-bot y curar contenido viral de desarrollo en piloto automático.",
+    "categoria": "GitHub",
+    "tags": [
+      "Repositorios",
+      "Automatizacion",
+      "Ciberseguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 104,
+    "nombre": "Tyra-SherLock",
+    "url": "https://github.com/tyranroot/Tyra-SherLock",
+    "descripcion": "Herramienta de inteligencia de código abierto para recolectar información de manera efectiva. Ayuda a los investigadores a encontrar datos relevantes de manera rápida y precisa.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis",
+      "Inteligencia",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 105,
+    "nombre": "OSINTool",
+    "url": "https://github.com/DavidJara1998/OSINTool",
+    "descripcion": "Marco de trabajo de reconocimiento de inteligencia de código abierto (OSINT) que incluye inteligencia de dominios, enumeración de subdominios, búsqueda de correos electrónicos y búsqueda de nombres de usuario en 24 plataformas.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Reconocimiento",
+      "Inteligencia",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 106,
+    "nombre": "ZeroBogus",
+    "url": "https://github.com/buio2005/ZeroBogus",
+    "descripcion": "ZeroBogus es una suite multi-canale diseñada para identificar contenidos potencialmente falsos o engañosos, con informes interpretables. Esta herramienta permite analizar y detectar contenido dudoso de manera eficiente.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis de contenido",
+      "Detección de fraude",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 107,
+    "nombre": "TeleGift-Graph",
+    "url": "https://github.com/ayxkaddd/TeleGift-Graph",
+    "descripcion": "Visualiza las relaciones de regalos de Telegram de manera efectiva. Esta herramienta permite comprender las conexiones entre usuarios a través de los regalos compartidos en la plataforma.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Telegram",
+      "Análisis de Redes",
+      "Inteligencia"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 108,
+    "nombre": "Dark-Osint",
+    "url": "https://github.com/Corrodedhearts/Dark-Osint",
+    "descripcion": "Dark OSINT es un marco de inteligencia de código abierto avanzado (OSINT) enfocado en descubrir información difícil de encontrar, oscurecida o deliberadamente oculta a través de las capas profundas y oscuras de internet. Ayuda a revelar datos escondidos en la web.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Inteligencia",
+      "OSINT",
+      "Investigación"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 109,
+    "nombre": "insta-dl",
+    "url": "https://github.com/subzeroid/insta-dl",
+    "descripcion": "Descargador asincrónico de Instagram desde la línea de comandos, compatible con perfiles, publicaciones, reels, historias, elementos destacados, hashtags y comentarios. Permite el uso de backends personalizables como HikerAPI y aiograpi.",
+    "categoria": "Instagram",
+    "tags": [
+      "descarga",
+      "Instagram",
+      "CLI"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 110,
+    "nombre": "Github_Scraper_2026",
+    "url": "https://github.com/ruijindev0801/Github_Scraper_2026",
+    "descripcion": "Aplicación de escritorio para encontrar talento en GitHub por ubicación, repositorios, seguidores y género, extrayendo información de contacto pública como correo electrónico, LinkedIn y Discord, y exportándola a CSV o Google Sheets.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Reconocimiento",
+      "Talentos",
+      "Extraccion"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 111,
+    "nombre": "data-dumper",
+    "url": "https://github.com/Data-Dumper-Extension/data-dumper",
+    "descripcion": "Data Dumper es una extensión de navegador diseñada para extraer datos estructurados de páginas web, ayudando a los investigadores en su investigación. Maneja contenido estático, páginas renderizadas con JavaScript, listados paginados y feeds conscroll infinito.",
+    "categoria": "OSINT General",
+    "tags": [
+      "extraccionDatos",
+      "OSINT",
+      "investigacion"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 112,
+    "nombre": "navi-multitool",
+    "url": "https://github.com/glockinhand/navi-multitool",
+    "descripcion": "Herramienta de terminal avanzada con funcionalidades de automatización de Discord, inteligencia OSINT, herramientas de seguridad maliciosa y ofuscar código Python. Presenta una estética personalizable y elegante.",
+    "categoria": "OSINT General",
+    "tags": [
+      "seguridad",
+      "osint",
+      "herramienta"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 113,
+    "nombre": "igdump",
+    "url": "https://github.com/filyovscky/igdump",
+    "descripcion": "Volcador de publicaciones de Instagram moderno. Permite la extracción de contenido de Instagram de manera efectiva.",
+    "categoria": "Instagram",
+    "tags": [
+      "Instagram",
+      "Volcado",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 114,
+    "nombre": "mao-Tool",
+    "url": "https://github.com/schroder-mao/mao-Tool",
+    "descripcion": "Herramienta de inteligencia de kode abierto para búsqueda, filtrado y seguimiento en vivo. Ayuda en tareas de investigación y análisis de información.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Herramienta OSINT",
+      "Búsqueda Avanzada",
+      "Inteligencia Abierta"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 115,
+    "nombre": "cyclops",
+    "url": "https://github.com/smoke-wolf/cyclops",
+    "descripcion": "Pipeline de inteligencia de código abierto unificada para OSINT con 32 conectores, correlación de gráficos de entidades y generación automática de informes. Permite la instalación a través de pip con cyclops-osint",
+    "categoria": "OSINT General",
+    "tags": [
+      "Osint",
+      "Inteligencia",
+      "Ciberseguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 116,
+    "nombre": "ExploitLens",
+    "url": "https://github.com/Zain6870/ExploitLens",
+    "descripcion": "Herramienta de reconocimiento y análisis de seguridad que automatiza la enumeración de subdominios, la detección de tecnologías y el escaneo de puertos con puntuación de riesgos y generación de informes en HTML.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis",
+      "Seguridad",
+      "Reconocimiento"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 117,
+    "nombre": "How-to-Secure-Your-Git-Ass",
+    "url": "https://github.com/Feedbackatomicbomb98/How-to-Secure-Your-Git-Ass",
+    "descripcion": "Protege tus cuentas de GitHub identificando phishing, rastreando ingeniería social y manejando enlaces maliciosos con análisis y pasos de eliminación seguros. Esta herramienta ofrece una guía para fortalecer la seguridad en la plataforma de GitHub.",
+    "categoria": "GitHub",
+    "tags": [
+      "SeguridadGitHub",
+      "Phishing",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 118,
+    "nombre": "Azora-Nexus-Toolkit",
+    "url": "https://github.com/anuhas87/Azora-Nexus-Toolkit",
+    "descripcion": "Herramienta de ciberseguridad y análisis de inteligencia oscura que incluye características de exploración de la API de Roblox y Discord. Ofrece funcionalidades avanzadas para la detección y análisis de vulnerabilidades en línea",
+    "categoria": "OSINT General",
+    "tags": [
+      "Análisis OSINT",
+      "Seguridad en línea",
+      "Herramientas de ciberseguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 119,
+    "nombre": "webexplorer",
+    "url": "https://github.com/YoshiBigSmoke/webexplorer",
+    "descripcion": "Herramienta de descubrimiento de dominios que encuentra sitios web reales por TLD o región utilizando Certificate Transparency Logs, Wayback Machine y urlscan.io. Ofrece exploración paralela, verificación DNS/HTTP y almacenamiento en caché local con SQLite.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Descubrimiento de Dominios",
+      "OSINT",
+      "Ciberseguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 120,
+    "nombre": "ngate-es-2026-04",
+    "url": "https://github.com/cachuco/ngate-es-2026-04",
+    "descripcion": "Herramienta de ciberseguridad para análisis de información en línea. Diseñada para recopilar y procesar datos de fuentes abiertas.",
+    "categoria": "OSINT General",
+    "tags": [
+      "ciberseguridad",
+      "análisis",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 121,
+    "nombre": "anon-research",
+    "url": "https://github.com/marmar9615-cloud/anon-research",
+    "descripcion": "Herramienta para investigación web anónima a través de Tor, donde cada búsqueda y recuperación de datos utiliza un circuito fresco, impidiendo que los sitios objetivo vinculen tus solicitudes entre sí o a ti. Esta herramienta permite una búsqueda y navegación seguras y anónimas en la web.",
+    "categoria": "OSINT General",
+    "tags": [
+      "anonimato",
+      "investigacion",
+      "seguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 122,
+    "nombre": "syscan-vulnerability-scanner",
+    "url": "https://github.com/MistanKh/syscan-vulnerability-scanner",
+    "descripcion": "Escáner de vulnerabilidades agresivo y motor de reconocimiento de inteligencia de código abierto (OSINT) construido en React, que realiza mapeo invisible BGP/CT/Shodan y pruebas intrusivas de XSS/DB/Git directamente desde el navegador. Esta herramienta ofrece una funcionalidad de escaneo de vulnerabilidades frontal sin back-end.",
+    "categoria": "OSINT General",
+    "tags": [
+      "escaner-vulnerabilidades",
+      "OSINT",
+      "seguridad-cibernetica"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 123,
+    "nombre": "openworldeye",
+    "url": "https://github.com/chama-x/openworldeye",
+    "descripcion": "OpenWorldEye es una herramienta de OSINT táctica que utiliza un globo terráqueo para visualizar información geoespacial de fuentes como OpenSky, CelesTrak TLEs y USGS. Ofrece una representación gráfica interactiva utilizando react-globe.gl",
+    "categoria": "OSINT General",
+    "tags": [
+      "OSINT",
+      "Geoespacial",
+      "Inteligencia"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 124,
+    "nombre": "hacking-social_media-accounts",
+    "url": "https://github.com/drakecora6316509/hacking-social_media-accounts",
+    "descripcion": "Herramienta de prueba de seguridad avanzada y recuperación de cuentas de redes sociales. Mejora tu investigación digital con esta herramienta segura, de alta velocidad y optimizada.",
+    "categoria": "OSINT General",
+    "tags": [
+      "seguridad",
+      "recuperacion",
+      "cuentas"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 125,
+    "nombre": "mali-threat-monitor",
+    "url": "https://github.com/jujubeJP/mali-threat-monitor",
+    "descripcion": "La herramienta mali-threat-monitor ofrece una visualización interactiva de los incidentes de terrorismo, secuestro y ataques en la República de Mali durante los últimos 12 meses. Incluye un tablero interactivo con mapas y gráficos analíticos.",
+    "categoria": "OSINT General",
+    "tags": [
+      "Seguridad",
+      "Inteligencia",
+      "Visualización"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 126,
+    "nombre": "Grounding-Sources",
+    "url": "https://github.com/SITREP-Israel/Grounding-Sources",
+    "descripcion": "Inventario público de fuentes de datos monitoreadas por SITREP ISR. Los colaboradores pueden sugerir nuevas fuentes a través de problemas o solicitudes de extracción.",
+    "categoria": "OSINT General",
+    "tags": [
+      "OSINT",
+      "fuentes",
+      "monitoreo"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 127,
+    "nombre": "radar",
+    "url": "https://github.com/Chmod351/radar",
+    "descripcion": "Motor de reconocimiento autónomo de alto rendimiento y marco de descubrimiento de activos. Construido con Bun y TypeScript",
+    "categoria": "OSINT General",
+    "tags": [
+      "reconocimiento",
+      "seguridad",
+      "OSINT"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 128,
+    "nombre": "SerpantOxide",
+    "url": "https://github.com/Steake/SerpantOxide",
+    "descripcion": "Consola de seguridad ofensiva completamente ágil, capaz de planificar, delegar, supervisar, revisar, registrar y reportar. Ofrece una interfaz de usuario de producción y una shell experimental de macOS con enfoque en instrumentalización más que en inteligencia artificial.",
+    "categoria": "OSINT General",
+    "tags": [
+      "SeguridadOfensiva",
+      "ConsolaIntegral",
+      "Instrumentacion"
+    ],
+    "fecha_agregado": "2026-04-27"
+  },
+  {
+    "id": 129,
+    "nombre": "NetSpecter",
+    "url": "https://github.com/NetSpecter-OSINT/NetSpecter",
+    "descripcion": "Herramienta gratuita de inteligencia de código abierto y reconocimiento пасivo basada en navegador. Ofrece funcionalidades como DNS, WHOIS, SSL, subdominios, puertos y detección de tecnologías sin necesidad de instalación ni claves API.",
+    "categoria": "OSINT General",
+    "tags": [
+      "OSINT",
+      "Reconocimiento",
+      "Ciberseguridad"
+    ],
+    "fecha_agregado": "2026-04-27"
   }
 ]
